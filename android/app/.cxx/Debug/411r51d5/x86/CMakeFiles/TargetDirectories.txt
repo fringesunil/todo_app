@@ -1,0 +1,2 @@
+C:/Users/fring/StudioProjects/todo_app/android/app/.cxx/Debug/411r51d5/x86/CMakeFiles/edit_cache.dir
+C:/Users/fring/StudioProjects/todo_app/android/app/.cxx/Debug/411r51d5/x86/CMakeFiles/rebuild_cache.dir
