@@ -68,8 +68,6 @@ class HomeRepository with CommonString, CommonMethods {
           'Content-type': 'application/json',
         },
       );
-      print("STATUS CODE===============>${response.statusCode}");
-      print("STATUS BODY===============>${response.body}");
       if (response.statusCode == 200) {
         return taskDetailsModelFromJson(response.body);
       }
@@ -79,15 +77,12 @@ class HomeRepository with CommonString, CommonMethods {
   }
 
   updateTaskAPI(BuildContext context, String taskId, Map taskdetails) async {
-    print("Taskid===========>${taskId}");
-    print("Task DEATIS===========>${taskdetails}");
     try {
       final response = await http.patch(Uri.parse(baseUrl + 'task/${taskId}'),
           headers: {
             'Content-type': 'application/json',
           },
           body: jsonEncode(taskdetails));
-      print("AA===========>${response.statusCode}");
       if (response.statusCode == 200) {
         return;
       }

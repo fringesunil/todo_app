@@ -36,7 +36,6 @@ class AuthRepository with CommonString, CommonMethods {
   }
 
   signupAPI({required BuildContext context, required Map signupdetails}) async {
-    print("AA========>${signupdetails}");
     try {
       final response = await http.post(Uri.parse(baseUrl + 'user'),
           headers: {

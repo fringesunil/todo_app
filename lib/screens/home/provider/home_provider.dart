@@ -92,8 +92,6 @@ class HomeProvider extends HomeRepository with ChangeNotifier, CommonMethods {
 
   String useridByName(name) {
     int index = userList!.indexWhere((element) => element.name == name);
-    print("index ${index}");
-
     if (index >= 0) {
       return userList![index].id.toString();
     } else {
